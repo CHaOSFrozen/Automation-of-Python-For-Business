@@ -9,7 +9,7 @@ def api_function():
     # Access the file "summary_report.txt"
     fp_summary = Path.cwd()/"project_group"/"summary_report.txt" 
     # Assigning url variable a value 
-    url = 'https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=SGD&apikey=CX1CI0CXHQRFJXP6'
+    url = 'https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=SGD&apikey='OWNAPI'
     # Send HTTP requests (make a request to the web page as stated above)
     r = requests.get(url)
     data  = r.json()
